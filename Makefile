@@ -22,15 +22,5 @@ flake:
 black: 
 	black .
 
-d_build:
-	docker build -t modernpandas .
-
-d_run:
-	docker run --rm --mount type=bind,source=$(PWD),target=/src -p 9999:9999 modernpandas
-
 test:
 	pytest -q
-
-datasette:
-	csvs-to-sqlite ./data ./data/sqlite.db
-	datasette ./data/sqlite.db
