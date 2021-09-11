@@ -1,0 +1,25 @@
+name: modernpandas
+channels:
+  - conda-forge
+dependencies:
+  - jupyterlab    
+  - numpy
+  - pip 
+  - requests      # api calls
+  - altair        # interactive plottings
+  - matplotlib    # plotting a lot of data
+  - plotly        # interactive plotting
+  - seaborn       # nice statistical plots
+  - tqdm          # progressbars
+  - black         # code formatters 
+  - flake8        # style checkers
+  - nb_conda_kernels # use any conda env from within jupyter (also R kernels)
+  - pytest        # unittests
+  - cookiecutter  # project templates
+  - deon          # ethics checklists
+  - pip:
+    - csvs-to-sqlite  # convert csvs to sqlite on command line
+    - datasette       # explore sqlite in your browser
+    - datasette-vega  # add plotting to datasette
+    - chime           # audio cues for tasks with long runtimes
+    - pre-commit      # automated pre-commit hooks
