@@ -17,6 +17,7 @@ dependencies:
   - pytest        # unittests
   - cookiecutter  # project templates
   - deon          # ethics checklists
+  - rich          # rich command line outputs
   - pip:
     - csvs-to-sqlite  # convert csvs to sqlite on command line
     - datasette       # explore sqlite in your browser

@@ -13,6 +13,9 @@ help:
 install:
 	conda env create -f environment.yml
 
+update:
+	conda env update -f environment.yml
+
 clean:
 	rm -rf __pycache__ .pytest_cache
 
